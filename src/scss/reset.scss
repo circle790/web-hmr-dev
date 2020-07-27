@@ -19,11 +19,13 @@ time, mark, audio, video {
   background:transparent;
   box-sizing:border-box;
 }
-body {
+
+html, body{
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
   line-height:1;
 }
 
-:focus {
+:focus, :active {
   outline: none;
 }
 
@@ -53,6 +55,9 @@ a {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ins {

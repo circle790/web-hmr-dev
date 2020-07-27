@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include("./include/header.html")
+    <title>关于</title>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-about">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+            <a class="icon icon-menu pull-left open-panel"></a>
+            <h1 class="title">关于</h1>
+        </header>
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab">
+            <a class="tab-item external" href="./index.html">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item external active" href="./about.html">
+                <span class="icon icon-me"></span>
+                <span class="tab-label">关于</span>
+            </a>
+        </nav>
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="content-block">
+                <p>关于内容</p>
+                <p><a href="./detail.html" class="button button-fill button-big"> 详情页 </a></p>
+            </div>
+        </div>
+    </div>
+    <!-- popup, panel 等放在这里 -->
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>这是一个侧栏</p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><span class="button button-fill close-panel">关闭</span></p>
+        </div>
+    </div>
+</div>
+@@include("./include/footer.html")
+</body>
+</html>

@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    @@include("./include/header.html")
     <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="./css/min/reset.min.css" />
   </head>
   <body>
-    <div class="page">
-      显示内容
+    <div class="page-group">
+      <div class="page page-index">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+          <a class="icon icon-menu pull-left open-panel"></a>
+          <h1 class="title">首页</h1>
+        </header>
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab">
+          <a class="tab-item external active" href="./index.html">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">首页</span>
+          </a>
+          <a class="tab-item external" href="./about.html">
+            <span class="icon icon-me"></span>
+            <span class="tab-label">关于</span>
+          </a>
+        </nav>
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+          <div class="content-block">
+            <p>首页内容</p>
+            <p><a href="./detail.html" class="button button-fill button-big"> 详情页 </a></p>
+          </div>
+        </div>
+      </div>
+      <!-- popup, panel 等放在这里 -->
+      <div class="panel-overlay"></div>
+      <!-- Left Panel with Reveal effect -->
+      <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+          <p>这是一个侧栏</p>
+          <!-- Click on link with "close-panel" class will close panel -->
+          <p><span class="button button-fill close-panel">关闭</span></p>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="./static/js/html5shiv.min.js"></script>
-    <script type="text/javascript" src="./static/js/zepto.min.js"></script>
+    @@include("./include/footer.html")
   </body>
 </html>
